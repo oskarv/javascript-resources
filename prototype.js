@@ -17,7 +17,6 @@ let gwen = {
 // prototype chain can be very long
 console.log(gwen);
 
-
 // if you don't wanna go don't the protopype chain there is an built in function called hasOwnProperty
 console.log(gwen.height); // will return "6.2"
 console.log(gwen.hasOwnProperty('height')); // but this will return false
