@@ -13,16 +13,17 @@ let gwen = {
   __proto__: human
 };
 
-// with proto you instuct JavaScript to ask another object if this one doesn't have the answer
+// with proto you instruct JavaScript to ask another object if this one doesn't have the answer
 // prototype chain can be very long
 console.log(gwen);
+console.log(gwen.__proto__.__proto__); // will return mamal object
 
-// if you don't wanna go don't the protopype chain there is an built in function called hasOwnProperty
+// if you don't wanna go down the protopype chain there is a built in function called hasOwnProperty
 console.log(gwen.height); // will return "6.2"
 console.log(gwen.hasOwnProperty('height')); // but this will return false
 
 let ob1 = {};
-// adding property on top level proto will make this available to ANY object on your code base, bad practise?
+// adding property on top level object will make this available to ANY object in your code base, bad practise?
 ob1.__proto__.customFunc = "do custom things";
 
 let ob2 = {};
