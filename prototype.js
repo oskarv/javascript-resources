@@ -4,12 +4,12 @@ let mamal = {
 
 let human = {
   __proto__: mamal,
-	teeth: 32,
+  teeth: 32,
   height: '6.2'
 };
 
 let gwen = {
-	age: 19,
+  age: 19,
   __proto__: human
 };
 
